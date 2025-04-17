@@ -507,6 +507,7 @@ function copyPix() {
   <div class="relative w-full overflow-hidden h-[480px] rounded-xl">
     <div class="flex transition-transform duration-500 ease-in-out" :style="`transform: translateX(-${current * 100}%);`">
       <template x-for="(images, index) in images" :key="index">
+           <img src="images/dog2.jpg" alt="Imagem 2 do pet" />
         <div class="flex-shrink-0 w-full h-full px-1">
           <img
             :src="images"
