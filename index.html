@@ -506,10 +506,10 @@ function copyPix() {
   <!-- Carousel -->
   <div class="relative w-full overflow-hidden h-[480px] rounded-xl">
     <div class="flex transition-transform duration-500 ease-in-out" :style="`transform: translateX(-${current * 100}%);`">
-      <template x-for="(image, index) in images" :key="index">
+      <template x-for="(images, index) in images" :key="index">
         <div class="flex-shrink-0 w-full h-full px-1">
           <img
-            :src="image"
+            :src="images"
             alt="Comprovante"
             class="w-full h-full object-contain rounded-xl cursor-zoom-in"
             @click="openModal(image)"
